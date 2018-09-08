@@ -1,0 +1,6 @@
+framework module Pods_MRDropDown_Example {
+  umbrella header "Pods-MRDropDown_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

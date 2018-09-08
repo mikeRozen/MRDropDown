@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C769D112E5767E490CA2091 /* MRDropDown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MRDropDown.podspec; path = ../MRDropDown.podspec; sourceTree = "<group>"; };
-		20C2AEA4574DF78A62FAA576 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1C769D112E5767E490CA2091 /* MRDropDown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MRDropDown.podspec; path = ../MRDropDown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20C2AEA4574DF78A62FAA576 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3BAC4E38E05D37823B50BE59 /* Pods_MRDropDown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRDropDown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF613C43500AF320A736551 /* Pods_MRDropDown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRDropDown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MRDropDown_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRDropDown_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A70C865B910FB0641C8F319 /* Pods-MRDropDown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Tests/Pods-MRDropDown_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		79FDD9AE4861862A0AF21D6F /* Pods-MRDropDown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Example/Pods-MRDropDown_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81ED31BFD96C7864CBAEEFE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		81ED31BFD96C7864CBAEEFE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A53DE355D42836DFDAD8701B /* Pods-MRDropDown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Tests/Pods-MRDropDown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDBF9E76DCA2A249E812657D /* Pods-MRDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Example/Pods-MRDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -518,12 +518,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MRDropDown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,12 +534,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MRDropDown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
