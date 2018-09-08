@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MRDropDown_Example' do
+  pod 'MRDropDown', :path => '../'
+
+  target 'MRDropDown_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
