@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-    This is drop down list for google places API or any other data 
+    This is drop down list for google places API or any other data
                        DESC
 
-  s.homepage         = 'https://github.com/mike.rozen1@gmail.com/MRDropDown'
+  s.homepage         = 'https://github.com/mikeRozen/MRDropDown'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mike.rozen1@gmail.com' => 'mike.rozen1@gmail.com' }
-  s.source           = { :git => 'https://github.com/mike.rozen1@gmail.com/MRDropDown.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Micahel Rozenbalt' => 'mike.rozen1@gmail.com' }
+  s.source           = { :git => 'https://github.com/mikeRozen/MRDropDown.git', :tag => s.version.to_s }
+  s.swift_version = '3.3'
 
   s.ios.deployment_target = '9.0'
 
