@@ -22,7 +22,7 @@ pod 'MRDropDown'
 
 ## Author
 
-mike.rozen1@gmail.com, mike.rozen1@gmail.com
+Michael Rozenblat
 
 ## License
 

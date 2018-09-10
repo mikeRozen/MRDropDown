@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import MRDropDown
+
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var textField: MRDropDown!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

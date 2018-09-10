@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03DC299A7D11F7E62193C241FCA2ECE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		05358A7FB4E68C56D6944122A12EE630 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F248350102C8560B5B65752020924AB3 /* ReplaceMe.swift */; };
 		3947028F69AB6E4F50D6F8CDE2C877CF /* Pods-MRDropDown_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9594F8E028097A3F7AA7D6D9D5DC41 /* Pods-MRDropDown_Tests-dummy.m */; };
 		40FF6C6DE326A576B7A7EC54633703D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		5513474B4EC3562C11EA43C772DAAA92 /* MRDropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981CB9109E2F5991480D969B4BF3F391 /* MRDropDown-dummy.m */; };
@@ -16,6 +15,10 @@
 		8E99E8F0863FCE2C34EACAEE802DA65E /* Pods-MRDropDown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB0836187D5EAF2CD0894D33C29902 /* Pods-MRDropDown_Example-dummy.m */; };
 		96F3E9E7BB10AE2A873BAEB9D75066C9 /* MRDropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AE60A7826E64EE425CA365E6E8A39D /* MRDropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA4BAFAB09C9EC3B43896AEC9A448E97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E1ADB22121446B6200B817BC /* MRDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB22021446B6200B817BC /* MRDropDown.swift */; };
+		E1ADB22221446B6200B817BC /* MRDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB22021446B6200B817BC /* MRDropDown.swift */; };
+		E1ADB22521452A2F00B817BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB22421452A2F00B817BC /* UIView+Extension.swift */; };
+		E1ADB22621452A2F00B817BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB22421452A2F00B817BC /* UIView+Extension.swift */; };
 		F127DA0964047F14003270F918D23229 /* Pods-MRDropDown_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D3ECCBEB191BA6406C684E5F35EC60 /* Pods-MRDropDown_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -60,9 +63,10 @@
 		DD639120711BF92573E47F9A6767AE42 /* Pods-MRDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DDD7CA16919257D0189FF5A53A76FB90 /* Pods-MRDropDown_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Example-resources.sh"; sourceTree = "<group>"; };
 		E19349696FDC1ED46401360A47ED6FB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E1ADB22021446B6200B817BC /* MRDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRDropDown.swift; sourceTree = "<group>"; };
+		E1ADB22421452A2F00B817BC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E6E7063609F539E656B38364FBE0D91B /* Pods-MRDropDown_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Tests-resources.sh"; sourceTree = "<group>"; };
 		E973240D8F68144DAD87CA812041C6E2 /* Pods-MRDropDown_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F248350102C8560B5B65752020924AB3 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MRDropDown/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		F746B779B6753231E9430A29F9799F83 /* Pods-MRDropDown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRDropDown_Tests.modulemap"; sourceTree = "<group>"; };
 		FA1B918170440C6ABB0385EF4236ADD2 /* MRDropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MRDropDown.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,7 +155,8 @@
 		5D2DD4175CF0F9F2485F8BFE22D0BE56 /* MRDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				F248350102C8560B5B65752020924AB3 /* ReplaceMe.swift */,
+				E1ADB2232145292F00B817BC /* Extensions */,
+				E1ADB22021446B6200B817BC /* MRDropDown.swift */,
 				DF495C53EE0B64A84EB56211E61E0EC3 /* Pod */,
 				7D8878C3442E0480F284AA2294F70A75 /* Support Files */,
 			);
@@ -218,6 +223,14 @@
 				E19349696FDC1ED46401360A47ED6FB4 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		E1ADB2232145292F00B817BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1ADB22421452A2F00B817BC /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					848C29EFCB552BF4A5E01518DD1B5A7E = {
+						LastSwiftMigration = 0940;
+					};
+					E816FA6BC7FB7F0F1C5F3FEB302A42D3 = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,7 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1ADB22621452A2F00B817BC /* UIView+Extension.swift in Sources */,
 				8E99E8F0863FCE2C34EACAEE802DA65E /* Pods-MRDropDown_Example-dummy.m in Sources */,
+				E1ADB22221446B6200B817BC /* MRDropDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1ADB22521452A2F00B817BC /* UIView+Extension.swift in Sources */,
 				5513474B4EC3562C11EA43C772DAAA92 /* MRDropDown-dummy.m in Sources */,
-				05358A7FB4E68C56D6944122A12EE630 /* ReplaceMe.swift in Sources */,
+				E1ADB22121446B6200B817BC /* MRDropDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCA1991479F251C829E977B47AAB8815 /* Pods-MRDropDown_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -396,6 +421,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -406,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD639120711BF92573E47F9A6767AE42 /* Pods-MRDropDown_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -429,6 +456,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -503,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8436401CCC41FD3ED89CB9FD8A711406 /* MRDropDown.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -593,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8436401CCC41FD3ED89CB9FD8A711406 /* MRDropDown.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
