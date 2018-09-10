@@ -11,8 +11,6 @@
 		3947028F69AB6E4F50D6F8CDE2C877CF /* Pods-MRDropDown_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9594F8E028097A3F7AA7D6D9D5DC41 /* Pods-MRDropDown_Tests-dummy.m */; };
 		6615632AF4C8D059F85823C6C497D8B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9ACF07D34A2DD4E0AB8B6F4C2A3158E7 /* Pods-MRDropDown_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3CE888C0178F4A7480D7157BCE09E4 /* Pods-MRDropDown_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1ADB2292146B09800B817BC /* MRDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB2272146B09800B817BC /* MRDropDown.swift */; };
-		E1ADB22A2146B09800B817BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB2282146B09800B817BC /* UIView+Extension.swift */; };
 		E5DE55DF5AB392148699CAB02F7BB4D6 /* Pods-MRDropDown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB0836187D5EAF2CD0894D33C29902 /* Pods-MRDropDown_Example-dummy.m */; };
 		F127DA0964047F14003270F918D23229 /* Pods-MRDropDown_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D3ECCBEB191BA6406C684E5F35EC60 /* Pods-MRDropDown_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -20,15 +18,15 @@
 /* Begin PBXFileReference section */
 		0E3CE888C0178F4A7480D7157BCE09E4 /* Pods-MRDropDown_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRDropDown_Example-umbrella.h"; sourceTree = "<group>"; };
 		37D3ECCBEB191BA6406C684E5F35EC60 /* Pods-MRDropDown_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRDropDown_Tests-umbrella.h"; sourceTree = "<group>"; };
-		59D82F7FA11A4988316044F890832F3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		59D82F7FA11A4988316044F890832F3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5FFB0836187D5EAF2CD0894D33C29902 /* Pods-MRDropDown_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRDropDown_Example-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F134F4238FB41BE5419674998F3567D /* Pods-MRDropDown_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRDropDown_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		88C15B58CABBC9D5AEC216FAB6B3EF05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AAAD1569D9B1DE166DDF0C504DC21E6 /* Pods-MRDropDown_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRDropDown_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9084B6B88BC2DF26A770A2C6991FD2CA /* Pods-MRDropDown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRDropDown_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9628051E6181B2954B08A2DD50FDB0EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9628051E6181B2954B08A2DD50FDB0EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		98FD2FF8699105ACE15A5713F1B4112D /* Pods-MRDropDown_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9A9594F8E028097A3F7AA7D6D9D5DC41 /* Pods-MRDropDown_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRDropDown_Tests-dummy.m"; sourceTree = "<group>"; };
 		A6CEFF707D2B794F05C100CFD5D0F511 /* Pods-MRDropDown_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRDropDown_Example.modulemap"; sourceTree = "<group>"; };
@@ -39,13 +37,11 @@
 		DCA1991479F251C829E977B47AAB8815 /* Pods-MRDropDown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRDropDown_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DD639120711BF92573E47F9A6767AE42 /* Pods-MRDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DDD7CA16919257D0189FF5A53A76FB90 /* Pods-MRDropDown_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Example-resources.sh"; sourceTree = "<group>"; };
-		DFDCAF0F24B86F107E271EE286629A1B /* MRDropDown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MRDropDown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E1ADB2272146B09800B817BC /* MRDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MRDropDown.swift; path = MRDropDown/MRDropDown.swift; sourceTree = "<group>"; };
-		E1ADB2282146B09800B817BC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "MRDropDown/UIView+Extension.swift"; sourceTree = "<group>"; };
-		E60C5385B403DDC3D88F1CB0B0CB6E9A /* Pods_MRDropDown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRDropDown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDCAF0F24B86F107E271EE286629A1B /* MRDropDown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MRDropDown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E60C5385B403DDC3D88F1CB0B0CB6E9A /* Pods_MRDropDown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRDropDown_Example.framework; path = "Pods-MRDropDown_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E7063609F539E656B38364FBE0D91B /* Pods-MRDropDown_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Tests-resources.sh"; sourceTree = "<group>"; };
 		E973240D8F68144DAD87CA812041C6E2 /* Pods-MRDropDown_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRDropDown_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		EB729B0E54CD8EA25EE95F9A5A8AED9C /* Pods_MRDropDown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRDropDown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB729B0E54CD8EA25EE95F9A5A8AED9C /* Pods_MRDropDown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRDropDown_Tests.framework; path = "Pods-MRDropDown_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F746B779B6753231E9430A29F9799F83 /* Pods-MRDropDown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRDropDown_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,8 +104,6 @@
 		172929AD0ED04B284F1F45E2A0399E96 /* MRDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				E1ADB2272146B09800B817BC /* MRDropDown.swift */,
-				E1ADB2282146B09800B817BC /* UIView+Extension.swift */,
 				968574BCF734661D28B2A6258065732B /* Pod */,
 			);
 			name = MRDropDown;
@@ -243,11 +237,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					9B46CE4C50EE5FF2CECC1549342318BE = {
-						LastSwiftMigration = 0940;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -280,9 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1ADB22A2146B09800B817BC /* UIView+Extension.swift in Sources */,
 				E5DE55DF5AB392148699CAB02F7BB4D6 /* Pods-MRDropDown_Example-dummy.m in Sources */,
-				E1ADB2292146B09800B817BC /* MRDropDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +403,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCA1991479F251C829E977B47AAB8815 /* Pods-MRDropDown_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -439,8 +425,6 @@
 				PRODUCT_NAME = Pods_MRDropDown_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -451,7 +435,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD639120711BF92573E47F9A6767AE42 /* Pods-MRDropDown_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -474,7 +457,6 @@
 				PRODUCT_NAME = Pods_MRDropDown_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

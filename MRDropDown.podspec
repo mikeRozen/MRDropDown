@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MRDropDown/Classes/**/*'
+  s.source_files = 'MRDropDown/**/*'
   
   # s.resource_bundles = {
   #   'MRDropDown' => ['MRDropDown/Assets/*.png']
