@@ -1,22 +1,23 @@
 {
   "name": "MRDropDown",
   "version": "0.1.0",
-  "summary": "A short description of MRDropDown.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mike.rozen1@gmail.com/MRDropDown",
+  "summary": "Drop down list for Google places API",
+  "description": "This is drop down list for google places API or any other data",
+  "homepage": "https://github.com/mikeRozen/MRDropDown",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "mike.rozen1@gmail.com": "mike.rozen1@gmail.com"
+    "Micahel Rozenbalt": "mike.rozen1@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mike.rozen1@gmail.com/MRDropDown.git",
+    "git": "https://github.com/mikeRozen/MRDropDown.git",
     "tag": "0.1.0"
   },
+  "swift_version": "3.3",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "MRDropDown/Classes/**/*"
 }
