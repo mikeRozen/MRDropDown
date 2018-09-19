@@ -1,7 +1,7 @@
 # MRDropDown
 [![Version](https://img.shields.io/badge/pod-v0.1.0-blue.svg)](https://cocoapods.org/pods/MRDropDown)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/mikeRozen/MRDropDown/blob/master/LICENSE)
-[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://cocoapods.org/pods/MRDropDown)
+[![Platform](https://img.shields.io/badge/pod-v0.1.1-blue.svg)](https://cocoapods.org/pods/MRDropDown)
 
 ## Getting Started
 MRDropDown is fully customizable UI component based on Google API auto complete written in swift for IOS.
