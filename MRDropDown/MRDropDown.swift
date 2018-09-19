@@ -135,9 +135,9 @@ open class MRDropDown: UITextField {
                 switch (option) {
                 case let .textColor(value):
                     self.textColor = value
-                    break;
+                    break
                 case let .leftViewImage(value):
-                    guard let value = value else {return}
+                    guard let value = value else {break}
                     self.leftImage = value
                    // print("size of rect = \(NSStringFromCGRect(self.frame))")
                     let height = self.frame.height
@@ -157,15 +157,15 @@ open class MRDropDown: UITextField {
                     textFieldWidthSize = value
                     break
                 case let .language(value):
-                    guard let value = value else {return}
+                    guard let value = value else {break}
                     self.language = value
                     break
                 case let .font(value):
-                    guard let value = value else {return}
+                    guard let value = value else {break}
                     self.font = value
                     break
                 case let .tintColor(value):
-                    guard let value = value else {return}
+                    guard let value = value else {break}
                     self.tintColor = value
                     break
                 case let .tableViewHeight(value):
