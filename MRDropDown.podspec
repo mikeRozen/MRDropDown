@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Micahel Rozenbalt' => 'mike.rozen1@gmail.com' }
-  s.source           = { :git => 'https://github.com/mikeRozen/MRDropDown.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mikeRozen/MRDropDown.git', :tag => '0.1.1' } #s.version.to_s
   s.swift_version = '3.3'
 
   s.ios.deployment_target = '9.0'
