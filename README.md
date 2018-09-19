@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/pod-v0.1.1-blue.svg)](https://cocoapods.org/pods/MRDropDown)
 
 ## Getting Started
-MRDropDown is fully customizable UI component based on Google API auto complete written in swift for IOS.
+MRDropDown is a fully customizable UI component based on Google API autocomplete written in swift for IOS.
 <img width="400" height="700" alt="screen shot 2018-09-19 at 19 43 57" src="https://user-images.githubusercontent.com/11506268/45768143-a95c5a00-bc44-11e8-8f51-9ef846263138.png"><img width="400" height="700" alt="screen shot 2018-09-19 at 19 44 47" src="https://user-images.githubusercontent.com/11506268/45768144-a95c5a00-bc44-11e8-849b-6f02e67f7102.png">
 
 ## Example
