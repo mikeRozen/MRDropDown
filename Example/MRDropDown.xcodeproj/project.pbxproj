@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		652558FD87C958BF0B99BF12 /* Pods_MRDropDown_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF613C43500AF320A736551 /* Pods_MRDropDown_Tests.framework */; };
+		E1ADB22F21494D7300B817BC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADB22D21494D7300B817BC /* TableViewCell.swift */; };
+		E1ADB23021494D7300B817BC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1ADB22E21494D7300B817BC /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		81ED31BFD96C7864CBAEEFE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A53DE355D42836DFDAD8701B /* Pods-MRDropDown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Tests/Pods-MRDropDown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDBF9E76DCA2A249E812657D /* Pods-MRDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRDropDown_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRDropDown_Example/Pods-MRDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1ADB22D21494D7300B817BC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E1ADB22E21494D7300B817BC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				E1ADB22D21494D7300B817BC /* TableViewCell.swift */,
+				E1ADB22E21494D7300B817BC /* TableViewCell.xib */,
 			);
 			name = "Example for MRDropDown";
 			path = MRDropDown;
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				E1ADB23021494D7300B817BC /* TableViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -370,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1ADB22F21494D7300B817BC /* TableViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

@@ -1,0 +1,6 @@
+framework module MRDropDown {
+  umbrella header "MRDropDown-umbrella.h"
+
+  export *
+  module * { export * }
+}

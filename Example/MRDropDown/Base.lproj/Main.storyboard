@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MRDropDown_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
+                <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="ViewController" customModule="MRDropDown_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fC2-Lr-UOf" customClass="MRDropDown" customModule="MRDropDown">
-                                <rect key="frame" x="52" y="75" width="294" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rjl-Mq-HEC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fC2-Lr-UOf" customClass="MRDropDown" customModule="MRDropDown">
+                                <rect key="frame" x="19" y="50" width="337.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FdZ-a2-hCR"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rjl-Mq-HEC" secondAttribute="bottom" id="2oH-Tp-K9m"/>
+                            <constraint firstItem="rjl-Mq-HEC" firstAttribute="leading" secondItem="pwu-Jk-Lg3" secondAttribute="leading" id="Dey-a4-xa7"/>
+                            <constraint firstItem="fC2-Lr-UOf" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.9" id="Z6g-QG-Mmr"/>
+                            <constraint firstItem="rjl-Mq-HEC" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bPE-9e-PPw"/>
+                            <constraint firstItem="fC2-Lr-UOf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lMp-cG-BTa"/>
+                            <constraint firstItem="pwu-Jk-Lg3" firstAttribute="trailing" secondItem="rjl-Mq-HEC" secondAttribute="trailing" id="qsN-5Y-Uy1"/>
+                            <constraint firstItem="fC2-Lr-UOf" firstAttribute="top" secondItem="rjl-Mq-HEC" secondAttribute="top" constant="50" id="wj4-XO-Wv1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pwu-Jk-Lg3"/>
                     </view>
                     <connections>
                         <outlet property="textField" destination="fC2-Lr-UOf" id="aA0-N2-Lw4"/>
