@@ -13,8 +13,7 @@ MRDropDown is fully customizable UI component based on Google API auto complete 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-IOS 9.0 or higher
-IOS 10.0 for the Sample project
+IOS 9.0 or higher, IOS 10.0 for the Sample project
 
 ## Installation
 

@@ -10,14 +10,6 @@ import UIKit
 
 extension UIView{
     
-    //    func isResizable() -> Bool{
-    //        print("check")
-    //        return true
-    //    }
-    
-    //public var object: Any?
-    
-    
     func removeSubviews(){
         for view in self.subviews {
             view.removeFromSuperview()

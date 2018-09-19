@@ -8,10 +8,12 @@
 
 import UIKit
 import MRDropDown
+import MapKit
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var textField: MRDropDown!
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,8 @@ class ViewController: UIViewController {
                                MRDropTextFieldOptions.paddingFromTextField(20.0),
                                MRDropTextFieldOptions.selectAllOnTouch(true),
                                MRDropTextFieldOptions.language("en"),
-                               MRDropTextFieldOptions.apiKey("*****")]
+                               MRDropTextFieldOptions.bgViewEnable(true),
+                               MRDropTextFieldOptions.apiKey("****")]
         
         textField.setupOptions(textFieldOtions)
         textField.mrDelegate = self
@@ -65,6 +68,10 @@ extension ViewController: MRTextFieldDelegate {
     func addressDictionary(address: NSDictionary?){
         guard  let address = address else {return}
         print("address = \(address)")
+        guard let latitude = address["latitude"] as? Double, let longitude = address["longitude"] as? Double else { return }
+        let placeCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let region = MKCoordinateRegion(center: placeCoordinate, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        mapView.setRegion(region, animated: true)
     }
 }
 

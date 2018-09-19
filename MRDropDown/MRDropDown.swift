@@ -240,20 +240,26 @@ open class MRDropDown: UITextField {
     
     func makeBgView(){
         if !bgViewEnabled{return}
-        if bgView != nil {return}
+        if bgView != nil {
+           bgViewAdd()
+        }
         
         guard let frame = self.superview?.frame else {return}
         bgView = UIView.init(frame: frame)
-        bgView?.alpha = 0
         bgView?.backgroundColor = UIColor.darkGray
-        self.superview?.addSubview(bgView!)
-        UIView.animate(withDuration: 0.25, animations: {
-            self.bgView?.alpha = 0.4
-        })
+        bgViewAdd()
         
         let recognizer = UITapGestureRecognizer.init(target: self, action: #selector(bgViewTapped))
         bgView?.addGestureRecognizer(recognizer)
         
+    }
+    
+    func bgViewAdd() {
+        bgView?.alpha = 0
+        self.superview?.addSubview(bgView!)
+        UIView.animate(withDuration: 0.25, animations: {
+            self.bgView?.alpha = 0.4
+        })
     }
     
     func bgViewTapped(){
@@ -315,8 +321,8 @@ open class MRDropDown: UITextField {
         }) { (Bool) in
             self.tableViewController?.tableView.removeSubviews()
             self.tableViewController = nil
-            self.bgView?.removeSubviews()
-            //self.bgView = nil
+            self.bgView?.removeFromSuperview()
+            self.bgView = nil
         }
     }
     

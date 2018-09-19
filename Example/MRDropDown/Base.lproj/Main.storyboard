@@ -45,6 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="pwu-Jk-Lg3"/>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="rjl-Mq-HEC" id="znu-BM-fYa"/>
                         <outlet property="textField" destination="fC2-Lr-UOf" id="aA0-N2-Lw4"/>
                     </connections>
                 </viewController>
