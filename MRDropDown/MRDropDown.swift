@@ -374,13 +374,28 @@ open class MRDropDown: UITextField {
     }
     
     //MARK: - Google API
+    
     func googleSearch(completion: @escaping (_ results: [Dictionary<String, Any>]?,_ error:NSError?) -> Void){
         guard let stringToSearch = stringToSearch else {return}
+        
         if (stringToSearch.isEmpty || stringToSearch.trimmingCharacters(in: CharacterSet.whitespaces).isEmpty){return}
         //TODO: I think that kind of encoding won't cover all the case
-        let urlString = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=\(stringToSearch)&types=geocode&language=\(language)&key=\(apiKey)"
-        guard let urlStringEncoded = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
-        guard let  url = URL.init(string: urlStringEncoded) else {return}
+        
+        let urlComponents = NSURLComponents()
+        urlComponents.scheme = "https";
+        urlComponents.host = "maps.googleapis.com";
+        urlComponents.path = "/maps/api/place/autocomplete/json";
+        
+        let keyQuery      = URLQueryItem(name: "key",        value: apiKey)
+        let inputQuery    = URLQueryItem(name: "input",      value: stringToSearch)
+        let languageQuery = URLQueryItem(name: "language",   value: language)
+        let typesQuery    = URLQueryItem(name: "types",      value: "geocode")
+        
+        urlComponents.queryItems = [keyQuery, inputQuery, languageQuery, typesQuery]
+        
+        guard let url = urlComponents.url else {return}
+        
+        dataTask?.cancel()
         dataTask?.cancel()
         dataTask = defaultSession.dataTask(with: url){ data, response, error in
             defer{self.dataTask = nil}
