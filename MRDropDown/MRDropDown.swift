@@ -68,6 +68,8 @@ open class MRDropDown: UITextField {
     open var bgView: UIView?
     open var bgViewEnabled: Bool = true
     open var selectAllOnTouch: Bool = true
+    // The table view will be added:
+    open var targetView: UIView? = nil
     
     //Controllers
     var tableViewController: UITableViewController?
@@ -225,7 +227,12 @@ open class MRDropDown: UITextField {
             tableViewController?.tableView.layer.borderWidth = 1.0
             tableViewController?.tableView.layer.borderColor = UIColor.gray.cgColor
             tableViewController?.tableView.layer.cornerRadius = 5.0
-            self.superview?.addSubview((tableViewController?.tableView)!)
+            
+            if let targetView = self.targetView {
+                targetView.addSubview((tableViewController?.tableView)!)
+            } else {
+                self.superview?.addSubview((tableViewController?.tableView)!)
+            }
             
             tableViewController?.tableView.alpha = 0
             UIView.animate(withDuration: 0.25, animations: {
@@ -280,7 +287,13 @@ open class MRDropDown: UITextField {
     }
     
     func rectForDropDown(withHeight height: Float){
-        var rect = self.frame
+        var rect:CGRect = CGRect.zero
+        // Calculate the frame based on
+        if let targetView = self.targetView, let superView = self.superview {
+            rect = superView.convert(self.frame, to: targetView)
+        } else {
+            rect = self.frame
+        }
         rect.origin.y += self.frame.height + CGFloat(paddigFromTextField)
         rect.size.height = CGFloat(height)
         tableViewController?.tableView.frame = rect
