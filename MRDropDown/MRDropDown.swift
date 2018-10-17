@@ -38,6 +38,7 @@ public enum MRDropTextFieldOptions {
     case textFieldWidthSize(Float)
     case selectAllOnTouch(Bool)
     case language(String?)
+    case types(String?)
     case font(UIFont?)
     case apiKey(String)
     case tintColor(UIColor?)
@@ -97,7 +98,7 @@ open class MRDropDown: UITextField {
     
     //properties
     var language = "en"
-    
+    var types = "geocode"
     
     required  public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -159,6 +160,10 @@ open class MRDropDown: UITextField {
                 case let .language(value):
                     guard let value = value else {break}
                     self.language = value
+                    break
+                case let .types(value):
+                    guard let value = value else {break}
+                    self.types = value
                     break
                 case let .font(value):
                     guard let value = value else {break}
@@ -389,7 +394,7 @@ open class MRDropDown: UITextField {
         let keyQuery      = URLQueryItem(name: "key",        value: apiKey)
         let inputQuery    = URLQueryItem(name: "input",      value: stringToSearch)
         let languageQuery = URLQueryItem(name: "language",   value: language)
-        let typesQuery    = URLQueryItem(name: "types",      value: "geocode")
+        let typesQuery    = URLQueryItem(name: "types",      value: types)
         
         urlComponents.queryItems = [keyQuery, inputQuery, languageQuery, typesQuery]
         
