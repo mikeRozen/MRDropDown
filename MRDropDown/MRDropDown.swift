@@ -401,7 +401,6 @@ open class MRDropDown: UITextField {
         guard let url = urlComponents.url else {return}
         
         dataTask?.cancel()
-        dataTask?.cancel()
         dataTask = defaultSession.dataTask(with: url){ data, response, error in
             defer{self.dataTask = nil}
             if error != nil{return}
